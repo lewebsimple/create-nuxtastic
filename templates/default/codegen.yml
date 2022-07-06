@@ -1,5 +1,17 @@
 schema: server/graphql/build-schema.js
+documents: graphql/*.gql
 generates:
   generated/schema.d.ts:
     plugins:
       - typescript
+  composables/:
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: ../generated/schema.d.ts
+      extension: .ts
+      folder: ../composables
+    config:
+      documentMode: documentNode
+    plugins:
+      - typescript-operations
+      - typescript-vue-urql

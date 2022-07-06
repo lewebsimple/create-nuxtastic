@@ -1,4 +1,4 @@
-import consola from 'consola';
+import consola from "consola";
 import urql, { cacheExchange, dedupExchange, fetchExchange, ssrExchange } from "@urql/vue";
 
 export default defineNuxtPlugin((nuxtApp) => {
