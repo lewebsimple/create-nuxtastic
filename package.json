@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
-    "clean": "shx rm -rf lib",
+    "clean": "rm -rf lib",
     "dev": "tsup src/cli.ts --watch",
     "prepublishOnly": "npm run clean && npm run build"
   },
