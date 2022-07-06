@@ -8,6 +8,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "lint": "eslint . --fix --ignore-path .gitignore",
     "preview": "nuxt preview"
   },
   "devDependencies": {

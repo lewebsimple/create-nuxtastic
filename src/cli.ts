@@ -9,6 +9,6 @@ create("create-nuxtastic", {
   templateRoot,
   defaultDescription: "A fantastic Nuxt3 application",
   caveat: ({ packageDir }) => {
-    console.log(`cd ${packageDir} && yarn install && yarn dev`);
+    console.log(`cd ${packageDir} && yarn dev`);
   },
 });
