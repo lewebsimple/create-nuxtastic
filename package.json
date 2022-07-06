@@ -1,7 +1,7 @@
 {
   "name": "create-nuxtastic",
   "description": "Create fantastic Nuxt3 applications.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Pascal Martineau <pascal@lewebsimple.ca>",
   "license": "MIT",
   "scripts": {
