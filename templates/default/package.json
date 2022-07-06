@@ -11,6 +11,11 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@lewebsimple/eslint-config-vue": "^0.5.5",
+    "eslint": "^8.19.0",
     "nuxt": "3.0.0-rc.4"
+  },
+  "eslintConfig": {
+    "extends": "@lewebsimple/eslint-config-vue"
   }
 }
