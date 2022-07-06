@@ -7,4 +7,5 @@ export default defineNuxtConfig({
     cssPath: "~/assets/styles/_main.scss",
     viewer: false,
   },
+  vite: { css: { devSourcemap: true } },
 });
