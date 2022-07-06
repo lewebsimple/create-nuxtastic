@@ -1,0 +1,9 @@
+"""Greetings from GraphQL Yoga!"""
+type Query {
+  greetings: String
+}
+
+type Subscription {
+  """Current Time"""
+  time: String
+}

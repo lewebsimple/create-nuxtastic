@@ -11,7 +11,8 @@ export default defineNuxtConfig({
       { path: "node_modules/@fortawesome/fontawesome-free/svgs/regular", extensions: ["svg"], prefix: "Icon" },
     ],
   },
-  modules: ["@lewebsimple/nuxt3-svg", "@nuxtjs/tailwindcss"],
+  graphqlCodegen: { devOnly: true },
+  modules: ["@lewebsimple/nuxt3-svg", "@nuxtjs/tailwindcss", "nuxt-graphql-codegen"],
   publicRuntimeConfig: {
     graphqlHttpEndpoint: process.env.GRAPHQL_HTTP_ENDPOINT || "http://localhost:3000/api/graphql",
   },
