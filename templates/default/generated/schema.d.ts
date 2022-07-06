@@ -12,14 +12,7 @@ export type Scalars = {
   Float: number;
 };
 
-/** Greetings from GraphQL Yoga! */
 export type Query = {
   __typename?: 'Query';
-  greetings?: Maybe<Scalars['String']>;
-};
-
-export type Subscription = {
-  __typename?: 'Subscription';
-  /** Current Time */
-  time?: Maybe<Scalars['String']>;
+  version: Scalars['String'];
 };

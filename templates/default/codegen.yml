@@ -1,8 +1,5 @@
-schema: http://localhost:3000/api/graphql
+schema: server/graphql/build-schema.js
 generates:
-  generated/schema.graphql:
-    plugins:
-      - schema-ast
   generated/schema.d.ts:
     plugins:
       - typescript
