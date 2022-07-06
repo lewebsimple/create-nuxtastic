@@ -2,6 +2,9 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  build: {
+    transpile: ["@urql/vue"],
+  },
   components: {
     dirs: [
       { path: "~/components", extensions: ["svg", "vue"] },
@@ -9,6 +12,9 @@ export default defineNuxtConfig({
     ],
   },
   modules: ["@lewebsimple/nuxt3-svg", "@nuxtjs/tailwindcss"],
+  publicRuntimeConfig: {
+    graphqlHttpEndpoint: process.env.GRAPHQL_HTTP_ENDPOINT || "http://localhost:3000/api/graphql",
+  },
   tailwindcss: {
     cssPath: "~/assets/styles/_main.scss",
     viewer: false,
