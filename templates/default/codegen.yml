@@ -15,3 +15,6 @@ generates:
     plugins:
       - typescript-operations
       - typescript-vue-urql
+hooks:
+  afterAllFileWrite:
+    - eslint ./generated ./composables --fix
