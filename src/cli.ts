@@ -12,11 +12,12 @@ create("create-nuxtastic", {
     console.log(`cd ${packageDir} && yarn dev`);
   },
   extra: {
-    dbhost: { type: "input", describe: "MySQL hostname", default: "localhost" },
-    dbport: { type: "input", describe: "MySQL port", default: "3306" },
-    dbuser: { type: "input", describe: "MySQL username", default: "root" },
+    dbhost: { type: "input", describe: "MySQL hostname", default: "localhost", prompt: "if-no-arg" },
+    dbport: { type: "input", describe: "MySQL port", default: "3306", prompt: "if-no-arg" },
+    dbuser: { type: "input", describe: "MySQL username", default: "root", prompt: "if-no-arg" },
+    dbpass: { type: "input", describe: "MySQL password" },
     dbname: { type: "input", describe: "MySQL database" },
-    seedemail: { type: "input", describe: "Admin email", default: "admin@example.com" },
-    seedpass: { type: "input", describe: "Admin password", default: "changeme" },
+    seedemail: { type: "input", describe: "Admin email", default: "admin@example.com", prompt: "if-no-arg" },
+    seedpass: { type: "input", describe: "Admin password", default: "changeme", prompt: "if-no-arg" },
   },
 });
