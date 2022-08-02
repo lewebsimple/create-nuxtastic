@@ -18,7 +18,7 @@ export async function initAuthState(req: IncomingMessage): Promise<AuthState> {
   try {
     const cookies = parse(req.headers.cookie || "") as Record<string, string>;
     const auth = decodeJwt(cookies[jwtCookieName] || "");
-    auth.user && (await prisma.user.findFirst({ where: { ...auth.user }, rejectOnNotFound: true }));
+    auth.user && (await prisma.user.findFirstOrThrow({ where: { ...auth.user } }));
     return auth;
   } catch (e) {
     return { user: null };
