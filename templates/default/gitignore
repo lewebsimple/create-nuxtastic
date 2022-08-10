@@ -3,6 +3,7 @@
 .nitro
 .nuxt
 .output
+.unlighthouse
 dist
 node_modules
 *.log*
