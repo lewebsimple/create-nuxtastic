@@ -1,11 +1,12 @@
 {
   "name": "create-nuxtastic",
   "description": "Create fantastic Nuxt3 applications.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "Pascal Martineau <pascal@lewebsimple.ca>",
   "license": "MIT",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
+    "clean": "rm -rf dist",
     "dev": "tsup src/cli.ts --watch",
     "lint": "eslint . --fix --ignore-path .gitignore",
     "prepublishOnly": "npm run clean && npm run build"
