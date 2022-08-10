@@ -1,14 +1,10 @@
 <script setup lang="ts">
-const { isAuthenticated } = useAuth();
+definePageMeta({ middleware: ["is-not-authenticated"] });
 </script>
 
 <template>
-  <div id="login">
-    <div v-if="isAuthenticated">
-      <h1>Already logged in</h1>
-    </div>
-    <div v-else>
-      <h1>Please log in</h1>
-    </div>
+  <div id="login" class="">
+    <h1>Please log in</h1>
+    <FormLogin />
   </div>
 </template>

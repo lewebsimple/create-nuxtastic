@@ -8,5 +8,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@formkit/themes/tailwindcss"), require("@tailwindcss/forms"), require("@tailwindcss/line-clamp")],
+  content: ["./formkit.config.ts"],
 };
