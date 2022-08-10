@@ -1,7 +1,7 @@
 @layer components {
 
   .btn-default {
-    @apply inline-flex items-center gap-1.5 text-center;
+    @apply inline-flex justify-center items-center gap-1.5 text-center;
     @apply px-3 py-1.5 rounded border-2;
     @apply font-bold leading-tight;
     @apply bg-indigo-500 border-indigo-500 text-white;

@@ -29,8 +29,8 @@ async function onLogin(credentials: any, node: any) {
 <template>
   <FormKit
     type="form"
-    :classes="{ form: 'space-y-6' }"
-    :submit-attrs="{ classes: { input: 'w-full' } }"
+    :classes="{ form: 'space-y-3' }"
+    :submit-attrs="{ classes: { wrapper: 'mt-6', input: 'w-full' } }"
     submit-label="Login"
     @submit="onLogin"
   >

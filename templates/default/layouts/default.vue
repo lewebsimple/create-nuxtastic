@@ -4,6 +4,8 @@
     <main class="flex-grow">
       <slot />
     </main>
-    <footer class=""></footer>
+    <footer class="">
+      <AppFooter />
+    </footer>
   </div>
 </template>
