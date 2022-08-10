@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
-    "clean": "rm -rf lib",
     "dev": "tsup src/cli.ts --watch",
+    "lint": "eslint . --fix --ignore-path .gitignore",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "bin": "dist/cli.js",
