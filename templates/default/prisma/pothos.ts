@@ -5,8 +5,9 @@ export default interface PrismaTypes {
     Shape: User;
     Include: never;
     Select: Prisma.UserSelect;
-    Where: Prisma.UserWhereUniqueInput;
-    Fields: never;
+    OrderBy: Prisma.UserOrderByWithRelationInput;
+    WhereUnique: Prisma.UserWhereUniqueInput;
+    Where: Prisma.UserWhereInput;
     RelationName: never;
     ListRelations: never;
     Relations: {};
