@@ -5,9 +5,9 @@ import * as seeds from "./seeds";
 export type SeedFn = (prisma: PrismaClient) => Promise<any>;
 
 async function main() {
-  for (const key of Object.keys(seeds)) {
-    console.log("\n🌱 " + key);
-    console.log(await (seeds as Record<string, SeedFn>)[key](prisma));
+  for (const [seedName, seedFn] of Object.entries(seeds)) {
+    console.log("\n🌱 " + seedName);
+    console.log("   " + (await seedFn(prisma)));
   }
 }
 

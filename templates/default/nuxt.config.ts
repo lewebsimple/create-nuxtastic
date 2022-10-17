@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     "@kevinmarrec/nuxt-pwa",
     "@lewebsimple/nuxt3-svg",
     "@nuxtjs/tailwindcss",
-    "@unlighthouse/nuxt",
     "nuxt-graphql-codegen",
   ],
   publicRuntimeConfig: {

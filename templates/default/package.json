@@ -17,8 +17,8 @@
     "seed": "tsx ./prisma/seed.ts"
   },
   "dependencies": {
-    "@formkit/nuxt": "^1.0.0-beta.12-689bafd",
-    "@formkit/themes": "^1.0.0-beta.11",
+    "@formkit/nuxt": "latest",
+    "@formkit/themes": "latest",
     "@fortawesome/fontawesome-free": "^6.2.0",
     "@graphql-yoga/node": "^2.13.13",
     "@kevinmarrec/nuxt-pwa": "^0.8.0",
@@ -36,6 +36,7 @@
     "cookie-es": "^0.5.0",
     "graphql": "^16.6.0",
     "jsonwebtoken": "^8.5.1",
+    "prisma-nested-middleware": "^1.0.0",
     "zod": "^3.19.1",
     "zod-prisma": "^0.5.4"
   },

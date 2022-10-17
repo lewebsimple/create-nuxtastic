@@ -1,1 +1,1 @@
-export * from "./encrypt-password";
+export * from "./encrypt-user-password";
