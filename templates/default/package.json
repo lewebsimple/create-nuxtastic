@@ -7,6 +7,7 @@
   "scripts": {
     "build": "nuxt build",
     "clean": "rm -rf .nuxt",
+    "codegen": "graphql-codegen",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "lint": "eslint . --fix --ignore-path .gitignore",
@@ -41,7 +42,6 @@
     "zod-prisma": "^0.5.4"
   },
   "devDependencies": {
-    "@boost/module": "^4.0.0",
     "@graphql-codegen/cli": "^2.13.7",
     "@graphql-codegen/near-operation-file-preset": "^2.4.2",
     "@graphql-codegen/typescript": "^2.7.4",
@@ -54,7 +54,6 @@
     "husky": "^8.0.1",
     "nano-staged": "^0.8.0",
     "nuxt": "^3.0.0-rc.11",
-    "nuxt-graphql-codegen": "^0.3.3",
     "prisma": "^4.4.0",
     "sass": "^1.55.0",
     "tsx": "^3.10.1"

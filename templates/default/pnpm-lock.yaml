@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@boost/module': ^4.0.0
   '@formkit/nuxt': latest
   '@formkit/themes': latest
   '@fortawesome/fontawesome-free': ^6.2.0
@@ -33,7 +32,6 @@ specifiers:
   jsonwebtoken: ^8.5.1
   nano-staged: ^0.8.0
   nuxt: ^3.0.0-rc.11
-  nuxt-graphql-codegen: ^0.3.3
   prisma: ^4.4.0
   prisma-nested-middleware: ^1.0.0
   sass: ^1.55.0
@@ -66,7 +64,6 @@ dependencies:
   zod-prisma: 0.5.4_prisma@4.4.0+zod@3.19.1
 
 devDependencies:
-  '@boost/module': 4.0.0
   '@graphql-codegen/cli': 2.13.7_graphql@16.6.0
   '@graphql-codegen/near-operation-file-preset': 2.4.2_graphql@16.6.0
   '@graphql-codegen/typescript': 2.7.4_graphql@16.6.0
@@ -79,7 +76,6 @@ devDependencies:
   husky: 8.0.1
   nano-staged: 0.8.0
   nuxt: 3.0.0-rc.11_eslint@8.25.0+sass@1.55.0
-  nuxt-graphql-codegen: 0.3.3_dtenm43egy6gk37dtq3xpznwfq
   prisma: 4.4.0
   sass: 1.55.0
   tsx: 3.10.1
@@ -701,16 +697,6 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
-
-  /@boost/module/4.0.0:
-    resolution: {integrity: sha512-YyW8uhOrZsb6BTXi+46G3M9ThSg3TuHaUTSCWwYaHanaUygxQnYx2YWA6s8S3wUtUcqzNfs+PMSy7NAsUtUx3w==}
-    engines: {node: '>=14.15.0', npm: '>=6.14.0'}
-    peerDependencies:
-      typescript: ^4.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dev: true
 
   /@cloudflare/kv-asset-handler/0.2.0:
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
@@ -6028,19 +6014,6 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /nuxt-graphql-codegen/0.3.3_dtenm43egy6gk37dtq3xpznwfq:
-    resolution: {integrity: sha512-S5x0QJG0WCgo/qTpYbnjTgKpMfqbrMwsoFnhK7iOcSPLB0mPegFofgLuvkX3lwYDj+sldLJHLWzohshy4YzEsg==}
-    peerDependencies:
-      '@graphql-codegen/cli': ^2
-      graphql: ^15 || ^16
-    dependencies:
-      '@graphql-codegen/cli': 2.13.7_graphql@16.6.0
-      '@nuxt/kit': 3.0.0-rc.11
-      graphql: 16.6.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /nuxt/3.0.0-rc.11_eslint@8.25.0+sass@1.55.0:

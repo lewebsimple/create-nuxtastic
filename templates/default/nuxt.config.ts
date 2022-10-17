@@ -12,13 +12,7 @@ export default defineNuxtConfig({
     ],
   },
   graphqlCodegen: { devOnly: true },
-  modules: [
-    "@formkit/nuxt",
-    "@kevinmarrec/nuxt-pwa",
-    "@lewebsimple/nuxt3-svg",
-    "@nuxtjs/tailwindcss",
-    "nuxt-graphql-codegen",
-  ],
+  modules: ["@formkit/nuxt", "@kevinmarrec/nuxt-pwa", "@lewebsimple/nuxt3-svg", "@nuxtjs/tailwindcss"],
   publicRuntimeConfig: {
     graphqlHttpEndpoint: process.env.GRAPHQL_HTTP_ENDPOINT || "http://localhost:3000/api/graphql",
   },
