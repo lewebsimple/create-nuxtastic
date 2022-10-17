@@ -3,10 +3,10 @@ import ScopeAuthPlugin from "@pothos/plugin-scope-auth";
 import PrismaPlugin from "@pothos/plugin-prisma";
 import RelayPlugin from "@pothos/plugin-relay";
 import { UserRole } from "@prisma/client";
-import PrismaTypes from "../../prisma/pothos";
-import { prisma } from "../../prisma/client";
-import { AuthState } from "../utils/auth-state";
-import * as types from "./types";
+import PrismaTypes from "~/prisma/pothos";
+import { prisma } from "~/prisma/client";
+import { AuthState } from "~/server/utils/auth-state";
+import * as types from "~/server/graphql/schema/_types";
 
 // GraphQL content
 export type Context = {
@@ -23,9 +23,9 @@ export const builder = new SchemaBuilder<{
   PrismaTypes: PrismaTypes;
 }>({
   plugins: [ScopeAuthPlugin, PrismaPlugin, RelayPlugin],
-  authScopes: async (context) => ({
+  authScopes: async (context: Context) => ({
     isAuthenticated: !!context.auth.user,
-    hasUserRole: (role) => ["ADMIN", role].includes(context.auth.user?.role || ""),
+    hasUserRole: (role: UserRole) => ["ADMIN", role].includes(context.auth.user?.role || ""),
   }),
   prisma: { client: prisma },
   relayOptions: {
@@ -50,6 +50,3 @@ builder.queryType({});
 
 // Build & export GraphQL schema
 export const schema = builder.toSchema({});
-
-// Re-export prisma instance for convenience
-export { prisma };

@@ -1,7 +1,7 @@
-import { builder } from "../schema";
-import { version } from "../../../package.json";
+import { builder } from "~/server/graphql/schema";
+import { version } from "~/package.json";
 
-export const VersionQuery = () =>
+export const versionSchemaTypes = () =>
   builder.queryField("version", (t) =>
     t.string({
       resolve: () => version,

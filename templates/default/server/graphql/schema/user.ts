@@ -1,4 +1,5 @@
-import { builder, prisma } from "../schema";
+import { builder } from "~/server/graphql/schema";
+import { prisma } from "~/prisma/client";
 
 export const UserSchema = () => {
   // User relay node
