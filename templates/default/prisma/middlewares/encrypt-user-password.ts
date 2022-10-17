@@ -15,8 +15,8 @@ export const encryptUserPassword = createNestedMiddleware(async (params, next) =
         params.args.data = process(params.args.data);
         break;
       case "upsert":
-        params.args.create = process(params.args.create);
-        params.args.update = process(params.args.update);
+        params.args.create = process({ ...params.args.create });
+        params.args.update = process({ ...params.args.update });
         break;
       case "connectOrCreate":
         params.args.create = process(params.args.create);

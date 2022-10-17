@@ -1,9 +1,11 @@
+import { UserRole } from "@prisma/client";
 import type { SeedFn } from "../seed";
 
 export const seedAdminUser: SeedFn = async (prisma) => {
   const user = {
     email: process.env.SEED_ADMIN_EMAIL || "admin@example.com",
     password: process.env.SEED_ADMIN_PASSWORD || "changeme",
+    role: UserRole.ADMIN,
   };
   const { email } = await prisma.user.upsert({
     where: { email: user.email },
