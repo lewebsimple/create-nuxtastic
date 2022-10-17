@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "dev": "tsup src/cli.ts --watch",
     "lint": "eslint . --fix --ignore-path .gitignore",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepack": "pnpm run clean && pnpm run build"
   },
   "bin": "dist/cli.js",
   "files": [
