@@ -9,7 +9,7 @@ create("create-nuxtastic", {
   templateRoot,
   defaultDescription: "A fantastic Nuxt3 application",
   caveat: ({ packageDir }) => {
-    console.log(`cd ${packageDir} && yarn dev`);
+    console.log(`cd ${packageDir} && pnpm dev`);
   },
   extra: {
     dbhost: { type: "input", describe: "Postgres hostname", default: "localhost", prompt: "if-no-arg" },
